@@ -20,3 +20,8 @@
  4.
  Spring Actuators -  Automatically gathering and auditing health and metrics can then be applied to your application. 
  
+ 5.
+ Spring Security - It provides a very easy way to access the few production-ready REST endpoints and fetch all kinds of information from the web. But by using these endpoints, you can do many things to see here the endpoint docs.
+ 
+ 6.
+ 
