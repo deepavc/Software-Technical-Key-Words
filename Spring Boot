@@ -19,9 +19,21 @@
  
  4.
  Spring Actuators -  Automatically gathering and auditing health and metrics can then be applied to your application. 
+ Shutdown is an endpoint that allows the application to be gracefully shutdown. This feature is not enabled by default. 
+ You can enable this by using management.endpoint.shutdown.enabled=true in your application.properties file. But be careful about this if you are using this.
  
  5.
  Spring Security - It provides a very easy way to access the few production-ready REST endpoints and fetch all kinds of information from the web. But by using these endpoints, you can do many things to see here the endpoint docs.
  
  6.
+ the port of Embedded Tomcat server in Spring boot .
+ by configuring in application.properties you can change the port
+ server.port = 8081
+ if server.port = 0 (meaning any availble port can be assigned)
+ 
+ 7.
+ use spring-boot-starter-jetty  or spring-boot-starter-undertow as a dependency for each project , to overide the default Embedded Tomcat
+ 
+ 8.
+ spring.main.web-application-type=none - using this you can disable the spring webserver
  
