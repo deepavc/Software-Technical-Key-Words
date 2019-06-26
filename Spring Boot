@@ -1,0 +1,22 @@
+ 1. 
+ @SpringBootApplication annotation is equivalent to using @Configuration, @EnableAutoConfiguration, and @ComponentScan . to use a single annotation instead of using multiple
+ 
+ 2. 
+ exclude any package without using the basePackages filter. 
+ 
+ @SpringBootApplication(exclude= {Employee.class})
+ public class FooAppConfiguration {}
+ 
+ 3.
+ disable a specific auto-configuration class
+ @EnableAutoConfiguration(exclude={DataSourceAutoConfiguration.class})
+ 
+ or
+ 
+ in applciation.properties (comma seperated)
+ spring.autoconfigure.exclude=org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+ 
+ 
+ 4.
+ Spring Actuators -  Automatically gathering and auditing health and metrics can then be applied to your application. 
+ 
